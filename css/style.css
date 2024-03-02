@@ -1,0 +1,111 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400; 700; 900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400; 700; 900&família=Sriracha&display=swap');
+
+:root {
+    --fonte0: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte1: "Passion One", sans-serif;
+    --fonte2: "Sriracha", cursive;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+}
+
+html, body {
+    min-height: 100hv;
+    background-color: darkgray;
+    font-family: var(--fonte0);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header > h1 {
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: var(--fonte1);
+    font-size: 8vw;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 16px;
+    transition: 0.5s all ease;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-size: 20px;
+}
+
+section {
+    /* Ganhar um distanciamento de 10% da altura */
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+
+    /* Espaçamento duplo entre as linhas */
+    line-height: 2em;
+
+    font-family: var(--fonte2);
+    font-size: 4vw;
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+.normal {
+    background-color: white;
+    color: black;
+}
+
+.img {
+    background-color: rgb(51, 51, 51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px black;
+}
+
+.img > p {
+    padding: 15px;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.253);
+    text-shadow: 1px 1px 0px black;
+}
+
+#img01 {
+    background-image: url('../img/background001.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#img02 {
+    background-image: url('../img/background002.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
